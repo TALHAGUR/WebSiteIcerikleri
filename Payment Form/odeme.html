@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/odeme.css">
+
+</head>
+<body>
+
+<div class="container">
+
+    <form action="">
+
+        <div class="row">
+
+            <div class="col">
+
+                <h3 class="title">Kayıtlı Adres</h3>
+
+                <div class="inputBox">
+                    <span>Ad Soyad :</span>
+                    <input type="text" >
+                </div>
+                <div class="inputBox">
+                    <span>E-posta :</span>
+                    <input type="email" >
+                </div>
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>İl :</span>
+                        <input type="text" >
+                    </div>
+    
+                    <div class="inputBox">
+                        <span>İlçe :</span>
+                        <input type="text" >
+                    </div>
+                </div>
+                <div class="inputBox">
+                    <span>Adres :</span>
+                    <input type="text" >
+                </div>
+                
+
+            </div>
+
+            <div class="col">
+
+                <h3 class="title">Kart Bilgileri</h3>
+
+                <div class="inputBox">
+                    <span>Kartın Üstündeki İsim :</span>
+                    <input type="text" >
+                </div>
+                <div class="inputBox">
+                    <span>Kart Numarası:</span>
+                    <input type="number" name="cardno" id="cardno" maxlength="16" onkeypress="cardspace()"/>
+                </div>   
+                
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>Gün:</span>
+                        <input type="number" >
+                    </div>
+                    <div class="inputBox">
+                        <span>Ay :</span>
+                        <input type="number" >
+                    </div>
+                    <div class="inputBox">
+                        <span>Yıl :</span>
+                        <input type="number">
+                    </div>
+                </div>
+                <div class="checkbox-content">
+                    <input type="checkbox"id="logCheck" >
+                    <label class="text" for="logCheck" style="color:#606060">Sms yoluyla bildirim gelmesini onaylıyorum.<br></label>
+                    <input type="checkbox"id="logCheck" >
+                    <label class="text" for="logCheck" style="color:#606060">E-posta yoluyla bildirim gelmesini onaylıyorum.</label>
+                </div>
+                
+
+            </div>
+    
+        </div>
+
+        <input type="submit" value="proceed to checkout" class="submit-btn">
+
+    </form>
+
+</div>    
+    <script src="javascript.js"></script>
+</body>
+</html>
